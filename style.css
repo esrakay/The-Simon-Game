@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+body {
+    background-color: rgb(0, 0, 91);
+    color: bisque;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.grid-container {
+    width: 30vw;
+    height: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.square {
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.square:hover {
+    opacity: 0.5;
+}
+
+.pressed {
+    box-shadow: 0 0 4px 5px white;
+}
+
+
+
+
